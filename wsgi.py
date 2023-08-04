@@ -1,9 +1,4 @@
-from flask import Flask
+from myproject import app
 
-app = Flask(__name__)
-
-@app.route('/')
-def index():
-  return "Это тест задание"
-if __name__ == '__main__':
-  app.run()
+if __name__ == "__main__":
+    app.run()
